@@ -1,42 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Moda Brasil</title>
     <style>
-        html{
-            font-size: 6.25%; 
-        }
+      html {
+        font-size: 6.25%;
+      }
 
-        body{
-            
-            font-family: Arial;
-            margin: 0px;
-            background: #E5E5E5;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            justify-content: space-between;
-
-        }
-        #loginBox{
-            margin-top: 30px;
-            background: #ffffff;
-            width: 50vw;
-            height: 150px;
-            align-self: center;
-            flex: 0 1 55ch;
-                      
-        }
-        header{
-            
-            border:1px solid black;
-            height: 100px;
-            flex:0 1 20vh;
-            width: 100vw;
-        }
-    /*   footer{
+      body {
+        font-family: Arial;
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      .container {
+        min-height: 100vh;
+      }
+      nav {
+        background: #e5e5e5;
+        width: 100vw;
+        align-self: center;
+        flex: 0 1 55ch;
+        margin: 0px;
+        border: 1px solid #737373;
+      }
+      nav ul{
+          display: flex;
+          list-style: none;
+          align-items: center;
+          justify-content: center;
+          
+      }
+      ul li{
+          font-size: 15rem;
+          padding: 10px;
+      }
+      ul li:hover{
+         text-decoration: underline;
+      }
+      header {
+        height: 120px;
+        width: 100vw;
+      }
+      /*   footer{
             
             font-size: 1rem;
             background: #000000;
@@ -47,20 +56,34 @@
             color: white;
         } */
 
-        footer{
-            font-size: 10rem;
-            border:1px solid black;
-            height: 80px;
-            width: 100vw;
-            flex:0 1 20vh;
-        }
+      footer {
+        font-size: 10rem;
+        border: 1px solid black;
+        height: 80px;
+        width: 100vw;
+        align-items: flex-end;
+      }
     </style>
-</head>
-<body>
-<div class = "container">
-    <header></header>
-    <div id = "loginBox"></div>
-    <footer>Footer</footer>
-</div>    
-</body>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+          
+      </header>
+      <div class="container">
+        <nav>
+            <ul>
+                <li>FEMININO</li>
+                <li>MASCULINO</li>
+                <li>INFANTIL</li>
+                <li>ESPORTE</li>
+                <li>MARCA</li>
+                <li>ESTILOS</li>
+                
+            </ul>
+        </nav>
+      </div>
+      <footer>Footer</footer>
+    </div>
+  </body>
 </html>
