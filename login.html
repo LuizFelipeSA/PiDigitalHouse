@@ -8,54 +8,25 @@
       html {
         font-size: 6.25%;
       }
-
       body {
         font-family: Arial;
         margin: 0px;
         display: flex;
         flex-direction: column;
         min-height: 100vh;
-      }
-      .container {
-        min-height: 100vh;
-      }
-      nav {
-        background: #e5e5e5;
-        width: 100vw;
-        align-self: center;
-        flex: 0 1 55ch;
-        margin: 0px;
-        border: 1px solid #737373;
+        font-size: 15rem;
       }
       nav ul{
-          display: flex;
-          list-style: none;
-          align-items: center;
-          justify-content: center;
-          
+          cursor: pointer;
+          list-style: none; 
       }
       ul li{
           font-size: 15rem;
-          padding: 10px;
-      }
-      ul li:hover{
-         text-decoration: underline;
+          min-height: 40rem;
       }
       header {
         height: 120px;
-        width: 100vw;
       }
-      /*   footer{
-            
-            font-size: 1rem;
-            background: #000000;
-            width: 40vw;
-            align-self: flex-end;
-            flex: 0 1 8ch;
-            border-style: none;
-            color: white;
-        } */
-
       footer {
         font-size: 10rem;
         border: 1px solid black;
@@ -63,27 +34,88 @@
         width: 100vw;
         align-items: flex-end;
       }
+      img{
+        height: 270px; 
+        width: 150px;  
+        border:1px solid #000000;
+       }
+       nav li:hover{
+         text-decoration: underline;
+       }
+      #menuLateral{
+          width: 12%;
+          justify-content: right;
+          flex-grow: 0;
+          margin-right: 50rem;
+      }
+       #menuLateral li{
+        border-bottom: 1px solid #737373;
+        text-align: left;
+      }
+      #menuHorizontal{
+        justify-content: center;
+        flex-wrap: wrap;
+        display: flex;       
+        border: 1rem solid #737373;
+        background: #e5e5e5;
+        border-left: transparent;
+        border-right: transparent;
+      }
+      #menuHorizontal li{
+        padding-right: 50px;
+        padding-top: 20px;
+      }
+      .container {
+        min-width: 100vw;
+        display: flex;
+      }
+      .boxFotos{
+          flex-wrap: wrap;
+          width: 130vh;
+          display: inline-flex;
+          flex-direction: row;
+      }
+      .boxProduto{
+        flex-grow: 2;
+        flex-basis: auto;
+      }
     </style>
   </head>
   <body>
-    <div class="container">
       <header>
-          
+    
       </header>
+      <nav>
+        <ul id = "menuHorizontal">
+            <li>FEMININO</li>
+            <li>MASCULINO</li>
+            <li>INFANTIL</li>
+            <li>ESPORTE</li>
+            <li>MARCA</li>
+            <li>ESTILOS</li>  
+        </ul>
+    </nav>
       <div class="container">
-        <nav>
+       
+        <nav id = "menuLateral">
             <ul>
-                <li>FEMININO</li>
-                <li>MASCULINO</li>
-                <li>INFANTIL</li>
-                <li>ESPORTE</li>
+                <li>GÊNERO</li>
+                <li>TAMANHO</li>
                 <li>MARCA</li>
-                <li>ESTILOS</li>
-                
+                <li>COR</li>
+                <li>PREÇO</li>
             </ul>
         </nav>
-      </div>
-      <footer>Footer</footer>
-    </div>
+        <div class = "boxFotos">
+            <div class = "boxProduto"><img src="logo-text-removebg-preview.png" alt=""></div>
+            <div class = "boxProduto"><img src="logo-text-removebg-preview.png" alt=""></div>
+            <div class = "boxProduto"><img src="logo-text-removebg-preview.png" alt=""></div>
+            <div class = "boxProduto"><img src="logo-text-removebg-preview.png" alt=""></div>
+            <div class = "boxProduto"><img src="logo-text-removebg-preview.png" alt=""></div>
+            <div class = "boxProduto"><img src="logo-text-removebg-preview.png" alt=""></div>
+        </div>
+        
+ </div> 
+    <footer>Footer</footer>
   </body>
 </html>
